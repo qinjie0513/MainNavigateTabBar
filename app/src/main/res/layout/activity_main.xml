@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qinjie.example.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mainNavigateTabBar" />
+
+    <com.qinjie.mainnavigatetabbar.MainNavigateTabBar
+        android:id="@+id/mainNavigateTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        app:containerId="@+id/main_container"
+        app:navigateTabSelectedTextColor="#1897F2"
+        app:navigateTabTextColor="#313131"
+        app:navigateTabTextSize="12sp"
+        app:navigateTabIconTopPadding="5dp"
+        app:navigateTabIconBottomPadding="2dp"
+        app:navigateTabTitleTopPadding="0dp"
+        app:navigateTabTitleBottomPadding="2dp" />
+
+</RelativeLayout>
